@@ -1,0 +1,26 @@
+/*
+1. Posicionamiento
+  - position fixed, relative
+2. Modelo de caja (Box model)
+  - margin
+  - padding
+  - width-height
+3. Tipografía
+4. Visuales
+  -shadow box
+  -border radious
+5. Otros
+*/
+
+:root{
+  /*colores */
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5;
+  
+}

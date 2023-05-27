@@ -13,7 +13,17 @@
 */
 
 :root{
-  /*colores */
+  --white: #FFFFFF;
+  --black: #000000;
+  --green1: #7E956B;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+  --vlg: 30px
+}
+body{
+  margin: 0;
+  font-family:  'Raleway', sans-serif;;
 }
 *{
   box-sizing: border-box;
@@ -22,5 +32,24 @@
 }
 html{
   font-size: 62.5;
-  
+}
+header{
+  background-color: var(--green1);
+  display: flex;
+  height: 70px;
+  justify-content:space-around;
+  align-items: center;
+  width: 100%;
+}
+.HeaderTitle{
+  color: var(--white);
+}
+
+.symbol{
+  width: 50px;
+  height: 50px;
+}
+.MenuBurger{
+  width: 30px;
+  height: 30px;
 }

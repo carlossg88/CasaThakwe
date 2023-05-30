@@ -23,13 +23,14 @@
 }
 body{
   margin: 0;
+  /* width: 96%; */
   font-family:  'Raleway', sans-serif;;
 }
-/* *{
-  box-sizing: border-box;
+*{
+  /* box-sizing: border-box;
   margin: 0;
-  padding: 0;
-} */
+  padding: 0; */
+}
 html{
   font-size: 62.5;
 }
@@ -129,6 +130,7 @@ footer{
 }
 
 @media (min-width: 992px){
+
   header img{
     width: 100%;
   }
@@ -139,9 +141,11 @@ footer{
     margin: 50px;
   }
   .RestauratImage{
-    width: 40%;
+    width: 30%;
     display: flex;
+    flex-wrap: wrap;
     align-content: center;
+    object-fit: cover;
   }
 
   .RestaurantParagraph{
@@ -151,20 +155,74 @@ footer{
     padding: 5%;
     justify-content: center;
   }
-  .RestaurantParagraph div{
-
-  }
-
+ 
   .RestauratImage img{
     display: flex;
     width: 100%;
     height: 60%;
   }
 
+  .Hike{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: flex-end;
+    /* margin: 50px; */
+  }
+  .HikeImage{
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    
+  }
+
+  .HikeParagraph{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 5%;
+    justify-content: center;
+  }
+ 
+  .HikeImage img{
+    display: flex;
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+    
+  }
+  
+  .Bike{
+    display: flex;
+    width: 100%;
+    margin: 50px;
+  }
+  .BikeImage{
+    width: 40%;
+    display: flex;
+    align-content: center;
+  }
+
+  .BikeParagraph{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+ 
+  .BikeImage img{
+    display: flex;
+    width: 100%;
+    object-fit: cover;
+  }
+
   .Banner{
     
-
   }
+ 
 
  
 }

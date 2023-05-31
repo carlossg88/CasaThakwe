@@ -18,8 +18,8 @@
   --green1: #7E956B;
   --sm: 14px;
   --md: 16px;
-  --lg: 18px;
-  --vlg: 30px
+  --lg: 30px;
+  --vlg: 50px
 }
 body{
   margin: 0;
@@ -46,8 +46,19 @@ header{
   width: 100%;
   position: fixed;
 }
+
 .HeaderTitle{
   color: var(--white);
+  
+}
+
+.HeaderTitle h1{
+  margin-bottom: 0px;
+}
+
+.HeaderTitle p{
+  margin-top: 0px;
+  text-align: center;
 }
 
 .symbol{
@@ -72,7 +83,7 @@ main{
 .Subtitle{
  color: var(--green1);
  font-weight: 400;
- font-size: var(--vlg);
+ font-size: var(--lg);
  text-align: center;
  margin-top: 20px;
 }
@@ -129,23 +140,48 @@ footer{
   margin: 0px 20px 50px 20px;
 }
 
+
+/* MEDIA QUERY */
 @media (min-width: 992px){
 
   header img{
     width: 100%;
   }
 
+  .Subtitle{
+    font-size: var(--vlg);
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .UsParagraph{
+    padding-right: 300px;
+    padding-left: 300px;
+    
+  }
+
+  .UsParagraph :nth-child(2){
+    text-align: center;
+  }
+
+  .Banner{
+    display: flex;
+    margin: auto;
+    width: 200px;
+  }
+
+
   .Restaurant{
     display: flex;
-    width: 100%;
+    width: 95%;
     margin: 50px;
   }
   .RestauratImage{
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    object-fit: cover;
+    
   }
 
   .RestaurantParagraph{
@@ -158,19 +194,22 @@ footer{
  
   .RestauratImage img{
     display: flex;
-    width: 100%;
-    height: 60%;
+    width: 600px;
+    height: 450px;
+    margin: auto;
+    object-fit: cover;
+    
   }
 
   .Hike{
     display: flex;
     flex-direction: row-reverse;
-    width: 100%;
+    width: 95%;
     justify-content: flex-end;
     /* margin: 50px; */
   }
   .HikeImage{
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -180,27 +219,28 @@ footer{
   .HikeParagraph{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 50%;
     padding: 5%;
     justify-content: center;
   }
  
   .HikeImage img{
     display: flex;
-    width: 100%;
-    /* height: 100%; */
+    width: 600px;
+    height: 450px;
+    margin: auto;
     object-fit: cover;
-    
   }
   
   .Bike{
     display: flex;
-    width: 100%;
+    width: 95%;
     margin: 50px;
   }
   .BikeImage{
-    width: 40%;
+    width: 50%;
     display: flex;
+    flex-wrap: wrap;
     align-content: center;
   }
 
@@ -215,14 +255,22 @@ footer{
  
   .BikeImage img{
     display: flex;
-    width: 100%;
+    width: 600px;
+    height: 450px;
+    margin: auto;
     object-fit: cover;
   }
 
-  .Banner{
-    
+  .Map :nth-child(2){
+    text-align: center;
   }
- 
+  .FooterHeadline{
+    justify-content: center;
+  }
+
+  .FooterHeadline img{
+    margin-right: 20px;
+  }
 
  
 }

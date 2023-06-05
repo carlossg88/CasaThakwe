@@ -16,10 +16,10 @@
   --white: #FFFFFF;
   --black: #000000;
   --green1: #7E956B;
-  --green2:#6CA176
-  --green3: #78AB72
-  --green4:#A0AB72
-  --brown:#A19E6C
+  --green2:#6CA176;
+  --green3: #78AB72;
+  --green4:#A0AB72;
+  --brown:#A19E6C;
   --sm: 14px;
   --md: 16px;
   --lg: 30px;
@@ -27,7 +27,7 @@
 }
 body{
   margin: 0;
-  /* width: 96%; */
+  /* width: 99%; */
   font-family:  'Raleway', sans-serif;;
 }
 
@@ -39,11 +39,21 @@ html{
 header{
   background-color: var(--green1);
   display: flex;
-  height: 70px;
+  height: 120px;
   justify-content:center;
   align-items: center;
   width: 100%;
   position: fixed;
+  top: 0px;
+}
+
+.HeaderAcc{
+  background-color: var(--brown);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .HeaderTitle{
@@ -65,15 +75,15 @@ header{
 
 .MenuBurger{
   position: fixed;
-  top: 3%;
+  top: 7%;
   right: 5%;
 }
 
 .Navbar-Right{
   display: none;
   position: fixed;
-  top: 3.5%;
-  right: 9%;
+  top: 7%;
+  right: 2%;
   
 }
 .Navbar-Right a{
@@ -85,6 +95,7 @@ header{
 .symbol{
   width: 50px;
   height: 50px;
+  margin-right: 12px;
 }
 .MenuBurger{
   width: 25px;
@@ -131,8 +142,7 @@ main{
   margin-bottom: 5px;
   display: flex;
   justify-content: center;
-  
-  
+
 }
 .Banner a{
   display: flex;
@@ -152,7 +162,7 @@ main{
 
 footer{
   background-color: var(--green1);
-  padding: 20px 50px 0px 50px;
+  padding: 20px 45px 0px 45px;
 }
 
 .FooterHeadline{
@@ -179,6 +189,20 @@ footer{
 }
 
 
+.Accomodation{
+  margin-top: 150px;
+}
+
+.GlampingParagraph .Banner{
+  background-color: var(--brown);
+}
+
+.RoomsParagraph .Banner{
+  background-color: var(--brown);
+}
+
+
+
 /* MEDIA QUERY */
 @media (min-width: 992px){
 
@@ -203,7 +227,6 @@ footer{
   .UsParagraph{
     padding-right: 300px;
     padding-left: 300px;
-    
   }
 
   .UsParagraph :nth-child(2){
@@ -214,37 +237,46 @@ footer{
     display: flex;
     margin: auto;
     width: 200px;
-  }
+    border-radius: 15px;
 
+    /* Sombra */
+    
+  }
+  .Banner a{
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.26);
+    border-radius: 15px;
+    
+    
+  }
 
   .Restaurant{
     display: flex;
     width: 95%;
     margin: 50px;
   }
-  .RestauratImage{
-    width: 40%;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    
-  }
-
-  .RestaurantParagraph{
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    padding: 5%;
-    justify-content: center;
-  }
- 
-  .RestauratImage img{
+  .RestaurantImage{
+   
     display: flex;
     width: 600px;
     height: 450px;
     margin: auto;
     object-fit: cover;
-    
+  }
+
+  .RestaurantParagraph{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* padding: 5%; */
+    justify-content: center;
+  }
+ 
+  .RestaurantImage img{
+    display: flex;
+    width: 600px;
+    height: 450px;
+    margin: auto;
+    object-fit: cover;
   }
 
   .Hike{
@@ -259,7 +291,6 @@ footer{
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    
   }
 
   .HikeParagraph{
@@ -317,6 +348,56 @@ footer{
   .FooterHeadline img{
     margin-right: 20px;
   }
+  .ContactFooter{
+    text-align: center;
+    margin-bottom: 50px;
+  }
 
+  /* Accomodation */
+  .AccomodationParagraph{
+    padding-right: 300px;
+    padding-left: 300px;
+    /* background-color: black; */
+  }
+
+  .AccomodationParagraph :nth-child(2){
+    text-align: center;
+    /* width: 700px; */
+  }
+
+  .Glamping{
+    margin: 50px;
+  }
+  .GlampingParagraph .Paragraph{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 900px;
+  }
+
+  .GlampingImage{
+    width: 700px;
+    height: auto;
+    margin: auto;
+  }
+
+  .GlampingParagraph .Banner{
+    background-color: var(--brown);
+  }
+
+  .Rooms{
+    margin-bottom: 50px;
+  }
+
+  .Rooms .Paragraph{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 900px;
+  }
+
+  .RoomsImage{
+    width: 700px;
+    height: auto;
+    margin: auto;
+  }
  
 }

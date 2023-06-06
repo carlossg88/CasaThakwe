@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Casa Thäkwe</title>
   <link rel="icon" href="images/symbol.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,500;0,600;1,600&display=swap" rel="stylesheet">
@@ -14,6 +14,7 @@
 </head>
 <body>
   
+
   <header>
     
     
@@ -26,14 +27,34 @@
       
     </div>
     <div class="Navbar-Right">
-      <a href="">Inicio</a>
-      <a href="accomodation.html">Alojamiento</a>
-      <a href="">Restaurante</a>
+      <a href="./index.html">Inicio</a>
+      <a href="./accomodation.html">Alojamiento</a>
+      <a href="./restaurant.html">Restaurante</a>
       <a href="">Galería </a>
       <a href="">Contacto</a>
     </div>
 
-    <img class="MenuBurger" src="images/Menu.png" alt="">
+    <div class="navbar-right-mobile inactive">
+      <ul>
+        <li>
+          <a class="list" href="./accomodation.html">Alojamiento</a>
+        </li>
+        <li>
+          <a class="list" href="./restaurant.html">Restaurante</a>
+        </li>
+        <li>
+          <a class="list" href="">Galeria</a>
+        </li>
+        <li>
+          <a class="list" href="">Contacto</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="menuIcon">
+      <img class="menu" src="./images/Menu.png" alt="menu">
+    </div>
+    
     
   </header>
 
@@ -157,13 +178,15 @@
     </div>
     
     <div class="SocialNetworkImages">
-      <a href="https://www.facebook.com/CasaThakwe"><img src="images/facebook.png" alt=""></a>
-      <a href="https://www.instagram.com/casa_thakwe/"><img src="images/instagram.png" alt=""></a>
+      <a href="https://www.facebook.com/CasaThakwe" target="_blank" ><img src="images/facebook.png" alt=""></a>
+      <a href="https://www.instagram.com/casa_thakwe/" target="_blank" ><img src="images/instagram.png" alt=""></a>
 
     </div>
     
 
   </footer>
+
+  <script src="./main.js"></script>
 
 </body>
 </html>

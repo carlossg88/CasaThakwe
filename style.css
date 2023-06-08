@@ -155,10 +155,13 @@ header{
 
 main{
   width: 100%;
-  
 }
+
 .ServiceImgage{
-  width: 100%
+  margin-top: 120px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .Subtitle{
@@ -193,7 +196,6 @@ main{
   color: white;
   text-decoration: none;
   font-weight: bold;
-
 }
 
 
@@ -252,10 +254,24 @@ footer{
   object-fit: cover;
 }
 
+.RestaurantMenu{
+  width: 100%;
+}
+
+.imgMenu{
+  display: flex;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  object-fit: cover;
+}
+
 
 
 /* MEDIA QUERY */
 @media (min-width: 992px){
+
+  /* HEADER */
 
   header img{
     width: 100%;
@@ -272,6 +288,15 @@ footer{
   .Navbar-Right{
     display: flex;
   }
+
+
+  /* MAIN */
+
+  .ServiceImgage{
+    height: 350px;
+    src: url(./images/food1.jpeg);
+  }
+ 
 
   .Subtitle{
     font-size: var(--vlg);
@@ -294,14 +319,10 @@ footer{
     width: 300px;
     border-radius: 15px;
 
-    /* Sombra */
-    
   }
   .Banner a{
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.26);
     border-radius: 15px;
-    
-    
   }
 
   .Restaurant{
@@ -332,6 +353,7 @@ footer{
     height: 450px;
     margin: auto;
     object-fit: cover;
+    
   }
 
   .Hike{
@@ -453,6 +475,31 @@ footer{
     width: 700px;
     height: auto;
     margin: auto;
+  }
+
+  /* RESTAURANT */
+
+  .imgFood{
+    margin-top: 120px;
+    height: 350px;
+  }
+
+  .RestaurantMenu{
+    display: flex;
+    width: 500px;
+    margin: auto;
+    
+  }
+  
+  .imgMenu{
+    display: flex;
+    width: 90%;
+    height: auto;
+    /* margin: auto; */
+    object-fit: cover;
+    margin-bottom: 30px;
+    
+    
   }
  
 }

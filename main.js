@@ -13,17 +13,50 @@ function toggleMobileMenu(){
 const See = document.querySelector('.See');
 See.addEventListener('click', openFullImg);
 
+const See2 = document.querySelector('.See2');
+See2.addEventListener('click', openFullImg2);
+
 const FullImgBox = document.getElementById("fullImgBox");
 fullImg = document.getElementById("fullImg");
 
+var ImageSource
+var pos=1
+var posmax=1
 
 function openFullImg(){
-  console.log('click');
   FullImgBox.style.display = "flex";
-  fullImg.src = './images/hike1.jpg'
-  
+  pos = 1
+  posmax=11
+  ImageSource = './images/Hike'
+  fullImg.src = ImageSource+pos+'.jpg'
+}
+
+function openFullImg2(){
+  FullImgBox.style.display = "flex";
+  pos = 1
+  posmax=3
+  ImageSource = './images/bike'
+  fullImg.src = ImageSource+pos+'.jpg'
 }
 
 function closeImg(){
   FullImgBox.style.display = "none";
+}
+
+
+
+function NextImg(){
+  if (pos==posmax){
+    pos=0
+  }
+  pos=pos+1
+  fullImg.src = ImageSource + pos + '.jpg'
+}
+
+function PreviousImg(){
+  pos=pos-1
+  if (pos==0){
+    pos=1
+  }
+  fullImg.src = './images/hike'+pos+'.jpg'
 }

@@ -271,8 +271,8 @@ footer{
   font-weight: bold;
 }
 .image-zoom{
-  width: 80%;
-  max-width: 90%;
+  width: 100%;
+  /* max-width: 90%; */
 }
 
 .next-icon{
@@ -329,6 +329,13 @@ footer{
   height: auto;
   margin: auto;
   object-fit: cover;
+}
+
+
+/* CONTACT US  */
+.contact{
+
+  margin-top: 200px;
 }
 
 
@@ -493,6 +500,10 @@ footer{
   .ContactFooter{
     text-align: center;
     margin-bottom: 50px;
+  }
+
+  .image-zoom{
+    max-width: 80%;
   }
 
   /* Accomodation */

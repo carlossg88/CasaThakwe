@@ -271,8 +271,13 @@ footer{
   font-weight: bold;
 }
 .image-zoom{
+  /* height: 100%; */
   width: 100%;
+  object-fit:scale-down;
+  /* object-fit: fill; */
+  /* object-fit: contain; */
   /* max-width: 90%; */
+  /* max-height: 90%; */
 }
 
 .next-icon{
@@ -327,6 +332,7 @@ footer{
   display: flex;
   width: 90%;
   height: auto;
+  max-height: 90%;
   margin: auto;
   object-fit: cover;
 }
@@ -334,10 +340,31 @@ footer{
 
 /* CONTACT US  */
 .contact{
-
   margin-top: 200px;
 }
 
+form{
+  padding: 50px 55px ;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.input-group{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+label{
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+input,textarea{
+  padding: 17px 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
 
 
 /* MEDIA QUERY */

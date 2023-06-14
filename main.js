@@ -27,7 +27,7 @@ function openFullImg(){
   FullImgBox.style.display = "flex";
   pos = 1
   posmax=11
-  ImageSource = './images/Hike'
+  ImageSource = './images/hike'
   fullImg.src = ImageSource+pos+'.jpg'
 }
 
@@ -36,7 +36,7 @@ function openFullImg2(){
   pos = 1
   posmax=3
   ImageSource = './images/bike'
-  fullImg.src = ImageSource+pos+'.jpg'
+  fullImg.src = ImageSource + pos+'.jpg'
 }
 
 function closeImg(){

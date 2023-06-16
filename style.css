@@ -320,9 +320,7 @@ footer{
   object-fit: cover;
 }
 
-.RestaurantMenu{
-  /* width: 100%; */
-}
+
 
 .RestaurantMenu-Container{
   display: flex;
